@@ -1,0 +1,170 @@
+/* Fonts --- */
+
+@font-face {
+    font-family: 'Vastago-Grotesk Heavy';
+    src: url('../fonts/VastagoGrotesk-Heavy.otf');
+}
+
+@font-face {
+    font-family: 'Vastago-Grotesk Bold';
+    src: url('../fonts/VastagoGrotesk-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Vastago-Grotesk Regular';
+    src: url('../fonts/VastagoGrotesk-Regular.otf');
+}
+
+/* Index Body --- */
+
+.index-body {
+    background-image: url('../assets/home.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Vastago-Grotesk Regular';
+}
+
+/* Navbar --- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+}
+
+.navbar a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menuLink {
+    display: none;
+}
+
+/* Homepage --- */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 300px);
+    position: relative;
+    text-align: center;
+}
+
+.homepage-text {
+    max-width: 700px;
+    width: 100%;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.menu-button {
+    font-family: 'Vastago-Grotesk Bold';
+    background-color: #E93635;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 50px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-button:hover {
+    background-color: white;
+    color: #E93635;
+}
+
+.menu-button:active {
+    background-color: #E93635;
+    color: white;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 425px) {
+
+    .navbar {
+        padding: 25px 45px;
+    }
+
+    .homepage-text {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        padding: 25px 45px;
+    }
+
+    .homepage-text {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .navbar {
+        padding: 25px 45px;
+    }
+
+    .homepage-text {
+        width: 80%;
+    }
+}
+
+
+
+/* Menu Page --- */
+
+/* Menu Body --- */
+
+.menu-body {
+    background-image: url('../assets/menupage.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Vastago-Grotesk Regular';
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 2;
+    margin: 0 100px 0 100px;
+}
+
+.menu-button1 {
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    margin: 25px;
+}
+
+.sayhello-icon {
+    max-width: 100px;
+    padding: 50px;
+}
+
