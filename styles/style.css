@@ -11,6 +11,11 @@
 }
 
 @font-face {
+    font-family: 'Vastago-Grotesk Semi-Bold';
+    src: url('../fonts/VastagoGrotesk-SemiBold.otf');
+}
+
+@font-face {
     font-family: 'Vastago-Grotesk Regular';
     src: url('../fonts/VastagoGrotesk-Regular.otf');
 }
@@ -30,10 +35,15 @@
 /* Navbar --- */
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 100px;
+    padding: 25px 5%;
+    z-index: 1000; 
 }
 
 .navbar a {
@@ -68,17 +78,18 @@
     max-width: 700px;
     width: 100%;
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
+    margin-top: 200px;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 200px;
 }
 
-.menu-button {
-    font-family: 'Vastago-Grotesk Bold';
+.tomenu-button {
+    font-family: 'Vastago-Grotesk Bold', Arial, Helvetica, sans-serif;
     background-color: #E93635;
     color: white;
     border-radius: 25px;
@@ -89,12 +100,12 @@
     z-index: 1;
 }
 
-.menu-button:hover {
+.tomenu-button:hover {
     background-color: white;
     color: #E93635;
 }
 
-.menu-button:active {
+.tomenu-button:active {
     background-color: #E93635;
     color: white;
     transition: 0.2s;
@@ -134,13 +145,124 @@
 }
 
 
+/* Main Menu Page --- */
 
-/* Menu Page --- */
-
-/* Menu Body --- */
 
 .menu-body {
     background-image: url('../assets/menupage.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Vastago-Grotesk Regular';
+}
+
+.menu-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 25px 0;
+    padding: 0 5%;
+}
+
+.menu-title h1 {
+    font-family: 'Vastago-Grotesk Semi-Bold', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin: 0 5%;
+    gap: 1px;
+}
+
+.menu-button {
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    margin: 10px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.250);
+}
+
+.menu-button:hover {
+    background-color: rgb(215, 215, 215);
+}
+
+.menu-button:active {
+    background-color: rgb(175, 175, 175);
+}
+
+.menubutton-icon {
+    max-width: 80px;
+    padding: 30%;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .menu-grid {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+        margin: 0 25px 0 25px;
+    }
+
+    .menubutton-icon {
+        max-width: 60px;
+        padding: 32%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        margin: 0 20px 0 20px;
+    }
+
+    .menubutton-icon {
+        max-width: 60px;
+        padding: 36%;
+    }
+    
+    .button-10 {
+        grid-row: 5;
+        grid-column: 2;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        margin: 0 5px 0 5px;
+    }
+
+    .menubutton-icon {
+        max-width: 50px;
+        padding: 35%;
+    }
+
+    .button-10 {
+        grid-row: 5;
+        grid-column: 2;
+    }
+
+}
+
+
+/* Say Hello Page --- */
+
+.sayhello-body {
+    background-image: url('../assets/sayhello-bg.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -149,22 +271,89 @@
     font-family: 'Vastago-Grotesk Regular';
 }
 
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 2;
-    margin: 0 100px 0 100px;
+.sayhello-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 25px 0;
+    padding: 0 5%;
 }
 
-.menu-button1 {
-    background-color: white;
+.sayhello-title h1 {
+    font-family: 'Vastago-Grotesk Semi-Bold', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.output {
+    position: relative;
+    margin: 50px 0;
+    min-height: 250px;
+}
+
+.sayhello-output {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 500px;
+    min-height: 250px;
     border-radius: 50px;
-    border: none;
-    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.sayhello-icon {
-    max-width: 100px;
-    padding: 50px;
+.sayhello-output p {
+    font-family: 'Vastago-Grotesk Semi-Bold', Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    width: 100%;
 }
+
+.sayhello-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin: 45px;
+}
+
+.sayhello-input input {
+    width: 500px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0 10px;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.250);
+}
+
+.sayhello-button {
+    font-family: 'Vastago-Grotesk Semi-Bold', Arial, Helvetica, sans-serif;
+    background-color: #E93635;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 50px;
+    width: fit-content;
+    margin-top: 50px;
+}
+
+.sayhello-button:hover {
+    background-color: white;
+    color: #E93635;
+    transition: 0.2s;
+}
+
+.sayhello-button:active {
+    background-color: #E93635;
+    color: white;
+}
+
+
 
