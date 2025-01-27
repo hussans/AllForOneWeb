@@ -54,12 +54,30 @@ if (addNumbersBtn) {
 
 if (madlibBtn) { 
     madlibBtn.addEventListener('click', () => {
-        window.location.href = '#';
+        window.location.href = '/pages/madlib.html';
     });
 }
 
 if (oddEvenBtn) { 
     oddEvenBtn.addEventListener('click', () => {
         window.location.href = '/pages/oddeven.html';
+    });
+}
+
+if (reverseItBtn) { 
+    reverseItBtn.addEventListener('click', () => {
+        window.location.href = '/pages/reverseit.html';
+    });
+}
+
+if (reverseNumbersBtn) { 
+    reverseNumbersBtn.addEventListener('click', () => {
+        window.location.href = '/pages/reversenumbers.html';
+    });
+}
+
+if (magicEightBallBtn) { 
+    magicEightBallBtn.addEventListener('click', () => {
+        window.location.href = '/pages/eightball.html';
     });
 }

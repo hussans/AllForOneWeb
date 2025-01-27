@@ -371,6 +371,7 @@
 
 /* Ask Questions Page --- */
 
+
 .askquestion-title {
     display: flex;
     justify-content: center;
@@ -527,5 +528,121 @@
     }
 }
 
+/* Story Page --- */
+
+.story-body {
+    background-image: url('../assets/sayhello-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Vastago-Grotesk Regular';
+    padding-bottom: 50px;
+}
+
+.story-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 25px 0;
+    padding: 0 5%;
+}
+
+.story-title h1 {
+    font-family: 'Vastago-Grotesk Semi-Bold', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.story-output {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80%;
+    max-width: 1200px;
+    min-height: 150px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 45px auto;
+    padding: 20px;
+}
+
+.story-output p {
+    font-family: 'Vastago-Grotesk Semi-Bold', Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+.story-input {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 0 auto 45px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.story-input .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.story-input p {
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.story-input input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+
+.story-input .sayhello-button {
+    grid-column: span 2;
+    align-self: center;
+    margin-top: 20px;
+    justify-self: center;
+    width: 200px; 
+}
+
+@media screen and (max-width: 768px) {
+    .story-input {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 85%;
+    }
+
+    .story-input .sayhello-button {
+        grid-column: span 1;
+    }
 
 
+}
+
+@media screen and (max-width: 550px) {
+    .story-output {
+        width: 85%;
+        min-height: 120px;
+    }
+
+    .story-input {
+        width: 85%;
+        margin: 0 auto 45px auto;
+    }
+
+    .story-input input {
+        width: 100% !important;
+    }
+}
