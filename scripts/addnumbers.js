@@ -27,8 +27,6 @@ addNumbersButton.addEventListener('click', async () => {
         outputText.textContent = "Please enter valid numbers!";
         return;
     }
-
-    outputText.textContent = "Calculating...";
     
     try {
         const result = await getSum(num1, num2);

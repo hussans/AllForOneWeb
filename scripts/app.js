@@ -51,3 +51,15 @@ if (addNumbersBtn) {
         window.location.href = '/pages/addnumbers.html';
     });
 }
+
+if (madlibBtn) { 
+    madlibBtn.addEventListener('click', () => {
+        window.location.href = '#';
+    });
+}
+
+if (oddEvenBtn) { 
+    oddEvenBtn.addEventListener('click', () => {
+        window.location.href = '/pages/oddeven.html';
+    });
+}

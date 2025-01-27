@@ -27,8 +27,6 @@ askQuestionButton.addEventListener('click', async () => {
         outputText.textContent = "Please fill in both fields!";
         return;
     }
-
-    outputText.textContent = "Asking the questions...";
     
     const answer = await getAnswer(name, wakeTime);
     outputText.textContent = answer;
