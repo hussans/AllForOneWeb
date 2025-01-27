@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
-    <title> All For One - Say Hello </title>
+    <title> All For One - Asking Questions </title>
 </head>
 <body class="sayhello-body">
 
@@ -19,33 +19,36 @@
         </div>
     </navbar>
 
-    <!-- Say Hello Title -->
+    <!-- Ask Question Title -->
 
     <section>
-        <div class="sayhello-title">
-            <h1> hello, world </h1>
+        <div class="askquestion-title">
+            <h1> Asking Questions </h1>
         </div>
     </section>
 
-    <!-- Say Hello Output -->
+    <!-- Ask Question Output -->
 
     <section class="output"> 
         <div class="sayhello-output">
-            <p id="outputText"> Please enter a name! </p>
+            <p id="outputText"> Answer the questions! </p>
         </div>
     </section>
 
-    <!-- Say Hello Input -->
+    <!-- Ask Question Input -->
 
     <section>
-        <div class="sayhello-input">
+        <div class="askquestions-input">
+            <p> What's your name? </p>
             <input id="nameInput" type="text" placeholder="enter name">
-            <button id="greetButton" class="sayhello-button"> ENTER </button>
+            <p> What time did you wake up? </p>
+            <input id="wakeUpInput" type="text" placeholder="time you woke up">
+            <button id="askQuestionButton" class="sayhello-button"> ENTER </button>
         </div>
     </section>
 
 
     <script src="../scripts/app.js"></script>
-    <script src="../scripts/sayhello.js"></script>
+    <script src="../scripts/askquestion.js"></script>
 </body>
 </html>

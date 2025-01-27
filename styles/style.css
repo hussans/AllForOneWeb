@@ -307,6 +307,7 @@
 
 .sayhello-output p {
     font-family: 'Vastago-Grotesk Semi-Bold', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
     text-align: center;
     margin: 0;
     width: 100%;
@@ -353,6 +354,160 @@
 .sayhello-button:active {
     background-color: #E93635;
     color: white;
+}
+
+@media screen and (max-width: 550px) {
+
+    .sayhello-output {
+        width: 350px;
+        min-height: 200px;
+    }
+
+    .sayhello-input input {
+        width: 330px;
+        height: 45px;
+    }
+}
+
+/* Ask Questions Page --- */
+
+.askquestion-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 25px 0;
+    padding: 0 5%;
+}
+
+.askquestion-title h1 {
+    font-family: 'Vastago-Grotesk Semi-Bold', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.askquestions-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    gap: 3px;
+    margin: 45px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.askquestions-input p,
+.askquestions-input input {
+    align-self: flex-start;
+    width: 100%;
+}
+
+.askquestions-input input {
+    width: 500px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0 10px;
+}
+
+.askquestions-input p {
+    color: white;
+    margin: 0;
+    padding: 0;
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.askquestions-input input {
+    margin-bottom: 15px;
+}
+
+.askquestions-input .sayhello-button {
+    align-self: center;
+    margin-top: 35px;
+}
+
+@media screen and (max-width: 550px) {
+
+    .askquestions-input {
+        width: 330px;
+        margin: 45px auto;
+    }
+
+    .askquestions-input input {
+        width: 100% !important;
+    }
+
+    .sayhello-output {
+        width: 350px;
+        min-height: 200px;
+    }
+}
+
+/* Add Numbers Page --- */
+
+.addnumbers-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 25px 0;
+    padding: 0 5%;
+}
+
+.addnumbers-title h1 {
+    font-family: 'Vastago-Grotesk Semi-Bold', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.addnumbers-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    gap: 3px;
+    margin: 45px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.addnumbers-input p,
+.addnumbers-input input {
+    align-self: flex-start;
+    width: 100%;
+}
+
+.addnumbers-input input {
+    width: 500px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0 10px;
+}
+
+.addnumbers-input p {
+    color: white;
+    margin: 0;
+    padding: 0;
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.addnumbers-input input {
+    margin-bottom: 15px;
+}
+
+.addnumbers-input .sayhello-button {
+    align-self: center;
+    margin-top: 35px;
 }
 
 

@@ -34,8 +34,20 @@ const restaurantPickerBtn = document.getElementById('restaurantPickerBtn');
 
 /* Say Hello Button */
 
-if (sayHelloBtn) { // Check if the element exists
+if (sayHelloBtn) { 
     sayHelloBtn.addEventListener('click', () => {
         window.location.href = '/pages/sayhello.html';
+    });
+}
+
+if (askQuestionBtn) { 
+    askQuestionBtn.addEventListener('click', () => {
+        window.location.href = '/pages/askquestions.html';
+    });
+}
+
+if (addNumbersBtn) { 
+    addNumbersBtn.addEventListener('click', () => {
+        window.location.href = '/pages/addnumbers.html';
     });
 }
