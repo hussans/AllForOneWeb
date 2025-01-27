@@ -8,7 +8,9 @@
 <br/>
 **Peer**: 
 <br/>
-**Review**: 
+Darryl P
+**Review**:
+I like the color choices you made, I also like the icons you used to represent the different games.HelloWord wasnt working on the frontend. Responsiveness is there also. Good job!
 <br/>
 <br/>
 **GitHub**: https://github.com/hussans/AllForOneWeb
